@@ -1,0 +1,6 @@
+<div class="survey-questions-component ion-padding" >
+  <div class="spinner-wrapper" *ngIf="loading">
+    <ion-spinner color="primary"></ion-spinner>
+  </div>
+  <app-survey *ngIf="!loading" [survey]="survey"></app-survey>
+</div>

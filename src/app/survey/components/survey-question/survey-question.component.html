@@ -1,0 +1,14 @@
+<div class="survey-question-component btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+  <div *ngFor="let answer of answers; let i = index; let min = true;">
+    <label class="option-label">{{orderLabels[i]}}:</label>
+    <div class="option-wrapper">
+      <label ngbButtonLabel class="option btn-primary border text-dark bg-white" [class.minimized]="answer.minimized">
+        <input ngbButton type="radio" [value]="answer.id"> {{answer.text}}
+      </label>
+      <div class="icon-wrapper" (click)="answer.minimized = !answer.minimized">
+        <ion-icon *ngIf="answer.minimized" ios="chevron-down-outline" md="chevron-down-sharp"></ion-icon>
+        <ion-icon *ngIf="!answer.minimized" ios="chevron-up-outline" md="chevron-up-sharp"></ion-icon>
+      </div>
+    </div>    
+  </div>
+</div>

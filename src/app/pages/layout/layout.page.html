@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-avatar slot="start">
+      <img src="assets/images/avatar.png">
+    </ion-avatar>
+    <ion-buttons slot="end">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{title || 'Survey Questions'}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <router-outlet></router-outlet>
+  </div>
+</ion-content>

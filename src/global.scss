@@ -1,0 +1,55 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root {
+  --ion-background-color: #e1f5ff;
+  --ion-background-color-rgb: 225,245,255;
+
+  --ion-text-color: #000000;
+  --ion-text-color-rgb: 0,0,0;
+
+  --ion-color-step-50: #d6e9f2;
+  --ion-color-step-100: #cbdde6;
+  --ion-color-step-150: #bfd0d9;
+  --ion-color-step-200: #b4c4cc;
+  --ion-color-step-250: #a9b8bf;
+  --ion-color-step-300: #9eacb3;
+  --ion-color-step-350: #929fa6;
+  --ion-color-step-400: #879399;
+  --ion-color-step-450: #7c878c;
+  --ion-color-step-500: #717b80;
+  --ion-color-step-550: #656e73;
+  --ion-color-step-600: #5a6266;
+  --ion-color-step-650: #4f5659;
+  --ion-color-step-700: #444a4d;
+  --ion-color-step-750: #383d40;
+  --ion-color-step-800: #2d3133;
+  --ion-color-step-850: #222526;
+  --ion-color-step-900: #161819;
+  --ion-color-step-950: #0b0c0d;
+}

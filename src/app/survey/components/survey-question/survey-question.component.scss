@@ -1,0 +1,42 @@
+.survey-question-component{
+  width: 100%;
+  flex-direction: column;
+  .option-wrapper{
+    position: relative;
+    .icon-wrapper{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2em;
+      border-radius: 0 .25rem .25rem 0;
+      background-color:rgba(0, 0, 0, 0.1);
+    }
+  }
+  label {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    &.active{
+      background-color: #8FD14F !important;
+    }
+    &.option-label {
+      margin: 0;
+      font-weight: bold;
+    }
+    &.option{
+      padding-right: 2em;
+      &.minimized{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    input[type=radio] {
+      display: none;
+    }    
+  }
+}

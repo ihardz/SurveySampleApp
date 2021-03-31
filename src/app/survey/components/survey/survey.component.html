@@ -1,0 +1,15 @@
+<ngb-progressbar [showValue]="true" type="warning" [value]="complete" [max]="100"></ngb-progressbar>
+<div *ngIf="complete < 100">
+  <ion-item lines="none">
+    <ion-text slot="start">
+      Question {{currentNumber}} of {{totalCount}}
+    </ion-text>
+    <ion-button slot="end" (click)="handleNextQuestionClick($event)" [disabled]="!activeQuestionAnswerChanged">{{last? 'Finish': 'Next Question'}}</ion-button>
+  </ion-item>
+    
+  <app-survey-question *ngIf="activeQuestion" [question]="activeQuestion" (answerIdChange)="handleAnswerChange($event)"></app-survey-question>
+</div>
+
+<div *ngIf="complete === 100" class="done-icon-wrapper">
+  <ion-icon color="success" name="checkmark-done-circle-outline"></ion-icon>
+</div>
