@@ -1,5 +1,5 @@
 <div class="survey-question-component btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
-  <div *ngFor="let answer of answers; let i = index; let min = true;">
+  <div *ngFor="let answer of answers; let i = index;">
     <label class="option-label">{{orderLabels[i]}}:</label>
     <div class="option-wrapper">
       <label ngbButtonLabel class="option btn-primary border text-dark bg-white" [class.minimized]="answer.minimized">
